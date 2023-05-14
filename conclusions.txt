@@ -1,0 +1,24 @@
+API test conclusions on user endpoint:
+
+1.- The API is able to successfully create new users with all required 
+fields and appropriate error messages are displayed for invalid input values.
+
+2.- The API is able to successfully search for users by their username
+or email address, returning all matching users and appropriate error
+messages for non-existent users or invalid search queries.
+
+3.- The API is able to successfully update a user's information, including
+their name, email, and phone number, and returns appropriate error messages 
+for non-existent users or invalid input values.
+
+4.- The API is able to successfully retrieve a user's information and return
+it in the expected format, matching the values that were previously updated.
+
+5.- The API is able to successfully delete a user and appropriate error 
+messages are displayed for non-existent users or invalid input values.
+
+6.- The API consistently returns the expected HTTP status codes and response 
+formats for each request.
+
+7.- Overall, the API is reliable and performs as expected for creating, searching, 
+updating, and deleting users.

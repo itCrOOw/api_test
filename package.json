@@ -1,0 +1,23 @@
+{
+  "name": "e2e",
+  "version": "1.0.0",
+  "description": "Cypress testing project for a technical assessment test",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run --spec 'cypress/e2e/**/**.ts' --browser chrome --headless"
+  },
+  "author": "Victor Soto",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.12.0",
+    "typescript": "^5.0.4",
+    "ts-loader": "^9.4.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": [
+      "cypress/e2e/stepdef/**/*.{js,ts}",
+      "cypress/e2e/stepdef.{js,ts}",
+      "cypress/support/step_definitions/**/*.{js,ts}"
+    ]
+  }
+}
